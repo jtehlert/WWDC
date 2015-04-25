@@ -10,6 +10,159 @@
 		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
 		<key>mainImage</key>
 		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>utdallas</key>
+	<dict>
+		<key>title</key>
+		<string>The University of Texas at Dallas</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>baseball</key>
+	<dict>
+		<key>title</key>
+		<string>Coaching NCAA Divison 3 Baseball</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>universityeats</key>
+	<dict>
+		<key>title</key>
+		<string>University Eats</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>fridgely</key>
+	<dict>
+		<key>title</key>
+		<string>Fridgely</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>Fridgely</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>hackathons</key>
+	<dict>
+		<key>title</key>
+		<string>Hackathons</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>jumpspace</key>
+	<dict>
+		<key>title</key>
+		<string>Jump Space Apps</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>bottlerocket</key>
+	<dict>
+		<key>title</key>
+		<string>Bottle Rocket Studios</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
+	</dict>
+	<key>deltataudelta</key>
+	<dict>
+		<key>title</key>
+		<string>Delta Tau Delta</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+		<key>images</key>
+		<dict>
+			<key>image1</key>
+			<string>Fridgely-1</string>
+			<key>image2</key>
+			<string>Fridgely-2</string>
+			<key>image3</key>
+			<string>Fridgely-3</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

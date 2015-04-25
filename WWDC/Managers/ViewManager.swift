@@ -31,7 +31,7 @@ class ViewManager: NSObject {
     var infoScreenBottleRocket: InfoDetailViewController?
     var infoScreenBio: InfoDetailViewController?
     var infoScreenBaseball: InfoDetailViewController?
-    var infoScreenWebsite: InfoDetailViewController?
+    var infoScreenHackathons: InfoDetailViewController?
     var infoScreenDeltaTauDelta: InfoDetailViewController?
     
     func presentViewController(var viewController: UIViewController) {
@@ -60,6 +60,7 @@ class ViewManager: NSObject {
     func openUniversityEats() {
         if infoScreenUniversityEats == nil {
             infoScreenUniversityEats = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenUniversityEats = setScreenInfo(infoScreenUniversityEats!, screenName: Strings.detailViewUniversityEats)
         }
         
         presentViewController(infoScreenUniversityEats!)
@@ -68,6 +69,7 @@ class ViewManager: NSObject {
     func openFridgely() {
         if infoScreenFridgely == nil {
             infoScreenFridgely = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenFridgely = setScreenInfo(infoScreenFridgely!, screenName: Strings.detailViewFridgely)
         }
         
         presentViewController(infoScreenFridgely!)
@@ -76,6 +78,7 @@ class ViewManager: NSObject {
     func openJumpSpace() {
         if infoScreenJumpSpace == nil {
             infoScreenJumpSpace = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenJumpSpace = setScreenInfo(infoScreenJumpSpace!, screenName: Strings.detailViewJumpSpace)
         }
         
         presentViewController(infoScreenJumpSpace!)
@@ -84,6 +87,7 @@ class ViewManager: NSObject {
     func openUTDallas() {
         if infoScreenUTDallas == nil {
             infoScreenUTDallas = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenUTDallas = setScreenInfo(infoScreenUTDallas!, screenName: Strings.detailViewUTDallas)
         }
         
         presentViewController(infoScreenUTDallas!)
@@ -92,6 +96,7 @@ class ViewManager: NSObject {
     func openBottleRocket() {
         if infoScreenBottleRocket == nil {
             infoScreenBottleRocket = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenBottleRocket = setScreenInfo(infoScreenBottleRocket!, screenName: Strings.detailViewBottleRocket)
         }
         
         presentViewController(infoScreenBottleRocket!)
@@ -100,9 +105,7 @@ class ViewManager: NSObject {
     func openBio() {
         if infoScreenBio == nil {
             infoScreenBio = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
-            infoScreenBio?.titleText = DataManager.sharedManager.titleForItem(Strings.detailViewBio)
-            infoScreenBio?.descriptionText = DataManager.sharedManager.descriptionForItem(Strings.detailViewBio)
-            infoScreenBio?.mainImage = DataManager.sharedManager.mainImageForItem(Strings.detailViewBio)
+            infoScreenBio = setScreenInfo(infoScreenBio!, screenName: Strings.detailViewBio)
         }
         
         presentViewController(infoScreenBio!)
@@ -111,33 +114,44 @@ class ViewManager: NSObject {
     func openBaseball() {
         if infoScreenBaseball == nil {
             infoScreenBaseball = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenBaseball = setScreenInfo(infoScreenBaseball!, screenName: Strings.detailViewBaseball)
         }
         
         presentViewController(infoScreenBaseball!)
     }
     
-    func openWebsite() {
-        if infoScreenWebsite == nil {
-            infoScreenWebsite = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+    func openHackathons() {
+        if infoScreenHackathons == nil {
+            infoScreenHackathons = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenHackathons = setScreenInfo(infoScreenHackathons!, screenName: Strings.detailViewHackathons)
         }
         
-        presentViewController(infoScreenWebsite!)
+        presentViewController(infoScreenHackathons!)
     }
     
     func openDeltaTauDelta() {
         if infoScreenDeltaTauDelta == nil {
             infoScreenDeltaTauDelta = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenDeltaTauDelta = setScreenInfo(infoScreenDeltaTauDelta!, screenName: Strings.detailViewDeltaTauDelta)
         }
         
         presentViewController(infoScreenDeltaTauDelta!)
     }
     
+    func setScreenInfo(viewController: InfoDetailViewController, screenName: String) -> InfoDetailViewController {
+        viewController.titleText = DataManager.sharedManager.titleForItem(screenName)
+        viewController.descriptionText = DataManager.sharedManager.descriptionForItem(screenName)
+        viewController.mainImage = DataManager.sharedManager.mainImageForItem(screenName)
+        viewController.image1 = DataManager.sharedManager.image1ForItem(screenName)
+        viewController.image2 = DataManager.sharedManager.image2ForItem(screenName)
+        viewController.image3 = DataManager.sharedManager.image2ForItem(screenName)
+        return viewController
+    }
+    
     func initialViewController() -> InfoDetailViewController {
         if infoScreenBio == nil {
             infoScreenBio = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
-            infoScreenBio?.titleText = DataManager.sharedManager.titleForItem(Strings.detailViewBio)
-            infoScreenBio?.descriptionText = DataManager.sharedManager.descriptionForItem(Strings.detailViewBio)
-            infoScreenBio?.mainImage = DataManager.sharedManager.mainImageForItem(Strings.detailViewBio)
+            infoScreenBio = setScreenInfo(infoScreenBio!, screenName: Strings.detailViewBio)
         }
         
         currentViewController = infoScreenBio

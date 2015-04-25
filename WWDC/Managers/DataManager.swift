@@ -39,6 +39,30 @@ class DataManager: NSObject {
         return image!
     }
     
+    func image1ForItem(item: String) -> UIImage {
+        let itemDict: NSDictionary? = dataDictionary().objectForKey(item) as? NSDictionary
+        let imagesDict: NSDictionary? = itemDict?.objectForKey(Strings.dataKeyImages) as? NSDictionary
+        let imageName: String = (imagesDict?.objectForKey(Strings.dataKeyImage1) as? String)!
+        let image: UIImage? = UIImage(named: imageName as String)
+        return image!
+    }
+    
+    func image2ForItem(item: String) -> UIImage {
+        let itemDict: NSDictionary? = dataDictionary().objectForKey(item) as? NSDictionary
+        let imagesDict: NSDictionary? = itemDict?.objectForKey(Strings.dataKeyImages) as? NSDictionary
+        let imageName: String = (imagesDict?.objectForKey(Strings.dataKeyImage2) as? String)!
+        let image: UIImage? = UIImage(named: imageName as String)
+        return image!
+    }
+    
+    func image3ForItem(item: String) -> UIImage {
+        let itemDict: NSDictionary? = dataDictionary().objectForKey(item) as? NSDictionary
+        let imagesDict: NSDictionary? = itemDict?.objectForKey(Strings.dataKeyImages) as? NSDictionary
+        let imageName: String = (imagesDict?.objectForKey(Strings.dataKeyImage3) as? String)!
+        let image: UIImage? = UIImage(named: imageName as String)
+        return image!
+    }
+    
     // MARK: Private Methods
     
     func dataFilePath() -> String {

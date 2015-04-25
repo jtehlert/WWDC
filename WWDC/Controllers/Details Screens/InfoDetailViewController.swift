@@ -13,10 +13,16 @@ class InfoDetailViewController: UIViewController {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var imageView1: UIImageView!
+    @IBOutlet weak var imageView2: UIImageView!
+    @IBOutlet weak var imageView3: UIImageView!
     
     var titleText: String?
     var descriptionText: String?
     var mainImage: UIImage?
+    var image1: UIImage?
+    var image2: UIImage?
+    var image3: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +34,13 @@ class InfoDetailViewController: UIViewController {
         titleLabel.text = titleText
         descriptionLabel.text = descriptionText
         mainImageView.image = mainImage
+        
+        imageView1.image = image1
+        imageView2.image = image2
+        imageView3.image = image3
+        
         styleMainImageView()
+        styleImageViews()
     }
     
     func styleMainImageView() {
@@ -36,6 +48,15 @@ class InfoDetailViewController: UIViewController {
         mainImageView.layer.masksToBounds = true;
         mainImageView.layer.borderColor = UIColor.whiteColor().CGColor
         mainImageView.layer.borderWidth = 1
+    }
+    
+    func styleImageViews() {
+        imageView1.layer.cornerRadius = 2
+        imageView2.layer.cornerRadius = 2
+        imageView3.layer.cornerRadius = 2
+        imageView1.layer.masksToBounds = true
+        imageView2.layer.masksToBounds = true
+        imageView3.layer.masksToBounds = true
     }
 
 }
