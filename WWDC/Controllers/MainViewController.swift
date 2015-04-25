@@ -30,6 +30,7 @@ class MainViewController: UIViewController, ViewManagerDelegate {
         self.removeChildViewController()
         self.setChildViewController(newChild)
         self.currentChildViewController = newChild
+        self.view.backgroundColor = self.currentChildViewController!.view.backgroundColor
     }
     
     private func removeChildViewController() {
@@ -63,6 +64,10 @@ class MainViewController: UIViewController, ViewManagerDelegate {
         newViewController.view.frame = self.currentChildViewController!.view.frame
         
         self.addChildViewController(newViewController)
+        
+        if self.currentChildViewController!.isKindOfClass(GridMenuViewController) {
+            self.view.backgroundColor = newViewController.view.backgroundColor
+        }
         
         if animate {
             

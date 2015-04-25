@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bio</key>
+	<dict>
+		<key>title</key>
+		<string>Hello, my name is Justin Ehlert</string>
+		<key>description</key>
+		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<key>mainImage</key>
+		<string>bio</string>
+	</dict>
+</dict>
+</plist>

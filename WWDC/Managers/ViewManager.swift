@@ -100,6 +100,9 @@ class ViewManager: NSObject {
     func openBio() {
         if infoScreenBio == nil {
             infoScreenBio = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenBio?.titleText = DataManager.sharedManager.titleForItem(Strings.detailViewBio)
+            infoScreenBio?.descriptionText = DataManager.sharedManager.descriptionForItem(Strings.detailViewBio)
+            infoScreenBio?.mainImage = DataManager.sharedManager.mainImageForItem(Strings.detailViewBio)
         }
         
         presentViewController(infoScreenBio!)
@@ -132,6 +135,9 @@ class ViewManager: NSObject {
     func initialViewController() -> InfoDetailViewController {
         if infoScreenBio == nil {
             infoScreenBio = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
+            infoScreenBio?.titleText = DataManager.sharedManager.titleForItem(Strings.detailViewBio)
+            infoScreenBio?.descriptionText = DataManager.sharedManager.descriptionForItem(Strings.detailViewBio)
+            infoScreenBio?.mainImage = DataManager.sharedManager.mainImageForItem(Strings.detailViewBio)
         }
         
         currentViewController = infoScreenBio

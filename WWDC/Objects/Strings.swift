@@ -20,4 +20,13 @@ struct Strings {
     static let storyboardScreenGridMenu = "menu"
     static let storyboardScreenInfoDetail = "infoDetail"
     
+    // Plist Keys
+    
+    static let dataKeyTitle = "title"
+    static let dataKeyDescription = "description"
+    static let dataKeyMainImage = "mainImage"
+    
+    // Detail Views
+    
+    static let detailViewBio = "bio"
 }
