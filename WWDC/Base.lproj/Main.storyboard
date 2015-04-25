@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="WWDC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,158 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sih-i2-Rdo" userLabel="Main View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAK-6c-vMZ" userLabel="Controls View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="AJX-8g-nhS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QAK-6c-vMZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="39b-je-vpI"/>
+                            <constraint firstItem="QAK-6c-vMZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4ey-LJ-TmB"/>
+                            <constraint firstItem="sih-i2-Rdo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6NL-ps-pqb"/>
+                            <constraint firstAttribute="trailing" secondItem="sih-i2-Rdo" secondAttribute="trailing" id="OPR-Jk-whv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sih-i2-Rdo" secondAttribute="bottom" id="QEK-rd-hqI"/>
+                            <constraint firstAttribute="trailing" secondItem="QAK-6c-vMZ" secondAttribute="trailing" id="VWW-CW-qMu"/>
+                            <constraint firstItem="sih-i2-Rdo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tgN-is-73B"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="controlsView" destination="QAK-6c-vMZ" id="eTE-W1-imi"/>
+                        <outlet property="mainView" destination="sih-i2-Rdo" id="4ez-VY-N4D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="333" y="584"/>
+        </scene>
+        <!--Grid Menu View Controller-->
+        <scene sceneID="54B-7w-aqn">
+            <objects>
+                <viewController storyboardIdentifier="menu" id="VEg-cf-CNn" customClass="GridMenuViewController" customModule="WWDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qu0-yA-x02"/>
+                        <viewControllerLayoutGuide type="bottom" id="sHq-zX-tJh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WXu-u1-5OO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUf-hk-7Yw">
+                                <rect key="frame" x="16" y="16" width="568" height="568"/>
+                                <color key="backgroundColor" red="0.0" green="0.68421052630000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hUf-hk-7Yw" firstAttribute="top" secondItem="WXu-u1-5OO" secondAttribute="top" constant="16" id="0Gv-UI-Vg1"/>
+                            <constraint firstItem="sHq-zX-tJh" firstAttribute="top" secondItem="hUf-hk-7Yw" secondAttribute="bottom" constant="16" id="FaS-Jc-ZGG"/>
+                            <constraint firstAttribute="trailing" secondItem="hUf-hk-7Yw" secondAttribute="trailing" constant="16" id="erN-hM-flo"/>
+                            <constraint firstItem="hUf-hk-7Yw" firstAttribute="leading" secondItem="WXu-u1-5OO" secondAttribute="leading" constant="16" id="g3A-b7-ife"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="COe-Gl-5Ej" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="584"/>
+        </scene>
+        <!--Info Detail View Controller-->
+        <scene sceneID="osu-ER-EKz">
+            <objects>
+                <viewController storyboardIdentifier="infoDetail" id="IOF-Ue-PDT" customClass="InfoDetailViewController" customModule="WWDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xrm-EQ-v3x"/>
+                        <viewControllerLayoutGuide type="bottom" id="qbt-C4-Qpn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jUR-vB-UVC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkW-uN-PU9">
+                                <rect key="frame" x="32" y="32" width="536" height="536"/>
+                                <color key="backgroundColor" red="0.83137254900000002" green="0.18039215689999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tkW-uN-PU9" firstAttribute="leading" secondItem="jUR-vB-UVC" secondAttribute="leading" constant="32" id="R94-6u-ZAg"/>
+                            <constraint firstAttribute="trailing" secondItem="tkW-uN-PU9" secondAttribute="trailing" constant="32" id="XZP-X9-bFb"/>
+                            <constraint firstItem="tkW-uN-PU9" firstAttribute="top" secondItem="jUR-vB-UVC" secondAttribute="top" constant="32" id="dmJ-Dw-VQc"/>
+                            <constraint firstItem="qbt-C4-Qpn" firstAttribute="top" secondItem="tkW-uN-PU9" secondAttribute="bottom" constant="32" id="vGp-NG-03q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZ2-Bn-K9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="1283"/>
+        </scene>
+        <!--Controls View Controller-->
+        <scene sceneID="MbD-Gc-3Jr">
+            <objects>
+                <viewController storyboardIdentifier="controls" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2qg-bR-kqh" customClass="ControlsViewController" customModule="WWDC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lIF-qt-eoa"/>
+                        <viewControllerLayoutGuide type="bottom" id="CS2-dL-PAX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EOE-eD-oyH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="kzz-di-u9I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbZ-AA-BDQ">
+                                <rect key="frame" x="544" y="6" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="N8x-tx-PXW"/>
+                                    <constraint firstAttribute="width" constant="40" id="wlU-Nq-dPD"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="Grid">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="Grid-Selected"/>
+                                <connections>
+                                    <action selector="gridButtonPressed:" destination="2qg-bR-kqh" eventType="touchUpInside" id="GEl-Pq-mzL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kzz-di-u9I" firstAttribute="top" secondItem="EOE-eD-oyH" secondAttribute="top" id="4aO-2F-u9O"/>
+                            <constraint firstItem="CS2-dL-PAX" firstAttribute="top" secondItem="kzz-di-u9I" secondAttribute="bottom" id="Vnu-No-jNP"/>
+                            <constraint firstItem="JbZ-AA-BDQ" firstAttribute="trailing" secondItem="EOE-eD-oyH" secondAttribute="trailingMargin" id="cWi-uu-oLQ"/>
+                            <constraint firstItem="kzz-di-u9I" firstAttribute="leading" secondItem="EOE-eD-oyH" secondAttribute="leading" id="dZJ-iU-oIV"/>
+                            <constraint firstAttribute="trailing" secondItem="kzz-di-u9I" secondAttribute="trailing" id="h8W-hP-3Dd"/>
+                            <constraint firstItem="kzz-di-u9I" firstAttribute="top" secondItem="lIF-qt-eoa" secondAttribute="bottom" id="sBr-LW-gKo"/>
+                            <constraint firstItem="JbZ-AA-BDQ" firstAttribute="top" secondItem="lIF-qt-eoa" secondAttribute="bottom" constant="6" id="vEQ-WZ-W2J"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sBr-LW-gKo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="84"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47p-dM-fKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="1025"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Grid" width="40" height="40"/>
+        <image name="Grid-Selected" width="40" height="40"/>
+        <image name="Shadow" width="1024" height="64"/>
+    </resources>
 </document>

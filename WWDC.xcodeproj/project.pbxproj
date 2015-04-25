@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C01FEA01AEA0F260075113A /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01FE9F1AEA0F260075113A /* ControlsViewController.swift */; };
 		9C0A10FC1AE9A51300AC71E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A10FB1AE9A51300AC71E3 /* AppDelegate.swift */; };
-		9C0A10FE1AE9A51300AC71E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A10FD1AE9A51300AC71E3 /* ViewController.swift */; };
 		9C0A11011AE9A51300AC71E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A10FF1AE9A51300AC71E3 /* Main.storyboard */; };
 		9C0A11031AE9A51300AC71E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A11021AE9A51300AC71E3 /* Images.xcassets */; };
 		9C0A11061AE9A51300AC71E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C0A11041AE9A51300AC71E3 /* LaunchScreen.xib */; };
 		9C0A11121AE9A51300AC71E3 /* WWDCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A11111AE9A51300AC71E3 /* WWDCTests.swift */; };
+		9C0D37E91AE9F85F0031EEA6 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D37E81AE9F85F0031EEA6 /* ViewManager.swift */; };
+		9C0D37EB1AE9F8900031EEA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D37EA1AE9F8900031EEA6 /* MainViewController.swift */; };
+		9CF2917D1AEB5E3600F16F4E /* GridMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2917C1AEB5E3600F16F4E /* GridMenuViewController.swift */; };
+		9CF2917F1AEB5E4400F16F4E /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2917E1AEB5E4400F16F4E /* InfoDetailViewController.swift */; };
+		9CF3A4C91AEA0E380062F27D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3A4C81AEA0E380062F27D /* RootViewController.swift */; };
+		9CFA679B1AEB058E00CA1648 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA679A1AEB058E00CA1648 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C01FE9F1AEA0F260075113A /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
 		9C0A10F61AE9A51300AC71E3 /* WWDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0A10FA1AE9A51300AC71E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C0A10FB1AE9A51300AC71E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C0A10FD1AE9A51300AC71E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C0A11001AE9A51300AC71E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C0A11021AE9A51300AC71E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C0A11051AE9A51300AC71E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9C0A110B1AE9A51300AC71E3 /* WWDCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0A11101AE9A51300AC71E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C0A11111AE9A51300AC71E3 /* WWDCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDCTests.swift; sourceTree = "<group>"; };
+		9C0D37E81AE9F85F0031EEA6 /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		9C0D37EA1AE9F8900031EEA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9CF2917C1AEB5E3600F16F4E /* GridMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridMenuViewController.swift; sourceTree = "<group>"; };
+		9CF2917E1AEB5E4400F16F4E /* InfoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
+		9CF3A4C81AEA0E380062F27D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9CFA679A1AEB058E00CA1648 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +89,10 @@
 		9C0A10F81AE9A51300AC71E3 /* WWDC */ = {
 			isa = PBXGroup;
 			children = (
+				9CFA67991AEB057900CA1648 /* Objects */,
+				9C0D37E71AE9F8320031EEA6 /* Managers */,
+				9C0D37E61AE9F8150031EEA6 /* Controllers */,
 				9C0A10FB1AE9A51300AC71E3 /* AppDelegate.swift */,
-				9C0A10FD1AE9A51300AC71E3 /* ViewController.swift */,
 				9C0A10FF1AE9A51300AC71E3 /* Main.storyboard */,
 				9C0A11021AE9A51300AC71E3 /* Images.xcassets */,
 				9C0A11041AE9A51300AC71E3 /* LaunchScreen.xib */,
@@ -110,6 +124,43 @@
 				9C0A11101AE9A51300AC71E3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C0D37E61AE9F8150031EEA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2917B1AEB5E1800F16F4E /* Detail Screens */,
+				9C0D37EA1AE9F8900031EEA6 /* MainViewController.swift */,
+				9CF3A4C81AEA0E380062F27D /* RootViewController.swift */,
+				9C01FE9F1AEA0F260075113A /* ControlsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9C0D37E71AE9F8320031EEA6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9C0D37E81AE9F85F0031EEA6 /* ViewManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9CF2917B1AEB5E1800F16F4E /* Detail Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9CF2917C1AEB5E3600F16F4E /* GridMenuViewController.swift */,
+				9CF2917E1AEB5E4400F16F4E /* InfoDetailViewController.swift */,
+			);
+			name = "Detail Screens";
+			path = "Details Screens";
+			sourceTree = "<group>";
+		};
+		9CFA67991AEB057900CA1648 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA679A1AEB058E00CA1648 /* Strings.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +263,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0A10FE1AE9A51300AC71E3 /* ViewController.swift in Sources */,
+				9C0D37EB1AE9F8900031EEA6 /* MainViewController.swift in Sources */,
+				9CF2917D1AEB5E3600F16F4E /* GridMenuViewController.swift in Sources */,
+				9C0D37E91AE9F85F0031EEA6 /* ViewManager.swift in Sources */,
+				9CF3A4C91AEA0E380062F27D /* RootViewController.swift in Sources */,
+				9C01FEA01AEA0F260075113A /* ControlsViewController.swift in Sources */,
+				9CFA679B1AEB058E00CA1648 /* Strings.swift in Sources */,
 				9C0A10FC1AE9A51300AC71E3 /* AppDelegate.swift in Sources */,
+				9CF2917F1AEB5E4400F16F4E /* InfoDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +468,7 @@
 				9C0A11171AE9A51300AC71E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C0A11181AE9A51300AC71E3 /* Build configuration list for PBXNativeTarget "WWDCTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +477,7 @@
 				9C0A111A1AE9A51300AC71E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
