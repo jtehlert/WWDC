@@ -170,7 +170,7 @@
                                 <rect key="frame" x="400" y="400" width="200" height="200"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="40"/>
-                                <state key="normal" title="Delta Tau Delta">
+                                <state key="normal" title="Photography">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -178,7 +178,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="deltataudeltaButtonPressed:" destination="VEg-cf-CNn" eventType="touchUpInside" id="rXN-aM-qbE"/>
+                                    <action selector="photographyButtonPressed:" destination="VEg-cf-CNn" eventType="touchUpInside" id="982-7P-aWk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnJ-sc-yio">
@@ -256,10 +256,10 @@
                         <outlet property="baseballButton" destination="Rv3-zx-uyf" id="PLs-v0-oTS"/>
                         <outlet property="bioButton" destination="lDu-tN-9gd" id="ydB-PX-Aad"/>
                         <outlet property="bottlerocketButton" destination="Jfk-ye-Mf9" id="UxZ-yF-nsR"/>
-                        <outlet property="deltataudeltaButton" destination="E2y-KY-ObY" id="9XQ-1j-AVo"/>
                         <outlet property="fridgelyButton" destination="hnJ-sc-yio" id="KWb-CZ-IgP"/>
                         <outlet property="hackathonsButton" destination="88P-Rs-CCD" id="RqP-lm-stm"/>
                         <outlet property="jumpspaceButton" destination="OAb-vF-yLu" id="pHI-GP-egL"/>
+                        <outlet property="photographyButton" destination="E2y-KY-ObY" id="TWg-GW-b0A"/>
                         <outlet property="universityeatsButton" destination="xzq-1w-DMJ" id="K3H-Ot-kL6"/>
                         <outlet property="utdallasButton" destination="3pU-G4-97O" id="0gQ-ky-SuL"/>
                     </connections>
@@ -280,13 +280,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LvQ-NS-Mvk">
-                                <rect key="frame" x="32" y="104" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="BHe-sT-bxK"/>
-                                    <constraint firstAttribute="width" constant="100" id="dtM-ZW-bMe"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhs-SK-AEu">
                                 <rect key="frame" x="156" y="104" width="412" height="48"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="40"/>
@@ -328,6 +321,13 @@
                                 <color key="backgroundColor" red="0.83137254900000002" green="0.18039215689999999" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0vy-YS-xEu" secondAttribute="height" multiplier="9:16" id="Z92-ny-jxB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LvQ-NS-Mvk">
+                                <rect key="frame" x="32" y="104" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BHe-sT-bxK"/>
+                                    <constraint firstAttribute="width" constant="100" id="dtM-ZW-bMe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -379,11 +379,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadow" translatesAutoresizingMaskIntoConstraints="NO" id="kzz-di-u9I">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbZ-AA-BDQ">
-                                <rect key="frame" x="544" y="6" width="40" height="40"/>
+                                <rect key="frame" x="544" y="16" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="N8x-tx-PXW"/>
                                     <constraint firstAttribute="width" constant="40" id="wlU-Nq-dPD"/>
@@ -400,19 +397,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kzz-di-u9I" firstAttribute="top" secondItem="EOE-eD-oyH" secondAttribute="top" id="4aO-2F-u9O"/>
-                            <constraint firstItem="CS2-dL-PAX" firstAttribute="top" secondItem="kzz-di-u9I" secondAttribute="bottom" id="Vnu-No-jNP"/>
                             <constraint firstItem="JbZ-AA-BDQ" firstAttribute="trailing" secondItem="EOE-eD-oyH" secondAttribute="trailingMargin" id="cWi-uu-oLQ"/>
-                            <constraint firstItem="kzz-di-u9I" firstAttribute="leading" secondItem="EOE-eD-oyH" secondAttribute="leading" id="dZJ-iU-oIV"/>
-                            <constraint firstAttribute="trailing" secondItem="kzz-di-u9I" secondAttribute="trailing" id="h8W-hP-3Dd"/>
-                            <constraint firstItem="kzz-di-u9I" firstAttribute="top" secondItem="lIF-qt-eoa" secondAttribute="bottom" id="sBr-LW-gKo"/>
-                            <constraint firstItem="JbZ-AA-BDQ" firstAttribute="top" secondItem="lIF-qt-eoa" secondAttribute="bottom" constant="6" id="vEQ-WZ-W2J"/>
+                            <constraint firstItem="JbZ-AA-BDQ" firstAttribute="top" secondItem="lIF-qt-eoa" secondAttribute="bottom" constant="16" id="vEQ-WZ-W2J"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="sBr-LW-gKo"/>
-                            </mask>
-                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -426,6 +413,5 @@
     <resources>
         <image name="Grid" width="40" height="40"/>
         <image name="Grid-Selected" width="40" height="40"/>
-        <image name="Shadow" width="1024" height="64"/>
     </resources>
 </document>

@@ -80,7 +80,6 @@ class MainViewController: UIViewController, ViewManagerDelegate {
             
             parentView.bringSubviewToFront(newViewController.view)
             parentView.bringSubviewToFront(self.currentChildViewController!.view)
-
             
             self.transitionFromViewController(self.currentChildViewController!, toViewController: newViewController, duration: duration, options: options, animations: { () -> Void in
                 

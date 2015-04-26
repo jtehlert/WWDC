@@ -129,10 +129,10 @@ class ViewManager: NSObject {
         presentViewController(infoScreenHackathons!)
     }
     
-    func openDeltaTauDelta() {
+    func openPhotography() {
         if infoScreenDeltaTauDelta == nil {
             infoScreenDeltaTauDelta = self.mainStoryboard.instantiateViewControllerWithIdentifier(Strings.storyboardScreenInfoDetail) as? InfoDetailViewController
-            infoScreenDeltaTauDelta = setScreenInfo(infoScreenDeltaTauDelta!, screenName: Strings.detailViewDeltaTauDelta)
+            infoScreenDeltaTauDelta = setScreenInfo(infoScreenDeltaTauDelta!, screenName: Strings.detailViewPhotography)
         }
         
         presentViewController(infoScreenDeltaTauDelta!)
@@ -145,7 +145,7 @@ class ViewManager: NSObject {
         viewController.backgroundColor = DataManager.sharedManager.backgroundColorForItem(screenName)
         viewController.image1 = DataManager.sharedManager.image1ForItem(screenName)
         viewController.image2 = DataManager.sharedManager.image2ForItem(screenName)
-        viewController.image3 = DataManager.sharedManager.image2ForItem(screenName)
+        viewController.image3 = DataManager.sharedManager.image3ForItem(screenName)
         return viewController
     }
     

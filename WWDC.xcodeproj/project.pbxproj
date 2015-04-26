@@ -15,13 +15,13 @@
 		9C0A11121AE9A51300AC71E3 /* WWDCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A11111AE9A51300AC71E3 /* WWDCTests.swift */; };
 		9C0D37E91AE9F85F0031EEA6 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D37E81AE9F85F0031EEA6 /* ViewManager.swift */; };
 		9C0D37EB1AE9F8900031EEA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0D37EA1AE9F8900031EEA6 /* MainViewController.swift */; };
+		9CF046431AECBDC8000EF04A /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF046421AECBDC8000EF04A /* UIImageEffects.m */; };
 		9CF2917D1AEB5E3600F16F4E /* GridMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2917C1AEB5E3600F16F4E /* GridMenuViewController.swift */; };
 		9CF2917F1AEB5E4400F16F4E /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF2917E1AEB5E4400F16F4E /* InfoDetailViewController.swift */; };
 		9CF3A4C91AEA0E380062F27D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF3A4C81AEA0E380062F27D /* RootViewController.swift */; };
 		9CF7CFD91AEB7679007A89BA /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7CFD81AEB7679007A89BA /* BebasNeue.otf */; };
 		9CF7CFDB1AEB7878007A89BA /* DetailData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7CFDA1AEB7878007A89BA /* DetailData.plist */; };
 		9CF7CFDD1AEB80C5007A89BA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7CFDC1AEB80C5007A89BA /* DataManager.swift */; };
-		9CF7CFDF1AEB8AE6007A89BA /* ImageEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7CFDE1AEB8AE6007A89BA /* ImageEffects.swift */; };
 		9CFA679B1AEB058E00CA1648 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA679A1AEB058E00CA1648 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +48,15 @@
 		9C0A11111AE9A51300AC71E3 /* WWDCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDCTests.swift; sourceTree = "<group>"; };
 		9C0D37E81AE9F85F0031EEA6 /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		9C0D37EA1AE9F8900031EEA6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9CF046401AECBDC7000EF04A /* WWDC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDC-Bridging-Header.h"; sourceTree = "<group>"; };
+		9CF046411AECBDC8000EF04A /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		9CF046421AECBDC8000EF04A /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 		9CF2917C1AEB5E3600F16F4E /* GridMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridMenuViewController.swift; sourceTree = "<group>"; };
 		9CF2917E1AEB5E4400F16F4E /* InfoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailViewController.swift; sourceTree = "<group>"; };
 		9CF3A4C81AEA0E380062F27D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9CF7CFD81AEB7679007A89BA /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
 		9CF7CFDA1AEB7878007A89BA /* DetailData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DetailData.plist; sourceTree = "<group>"; };
 		9CF7CFDC1AEB80C5007A89BA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		9CF7CFDE1AEB8AE6007A89BA /* ImageEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEffects.swift; sourceTree = "<group>"; };
 		9CFA679A1AEB058E00CA1648 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,7 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				9CFA679A1AEB058E00CA1648 /* Strings.swift */,
-				9CF7CFDE1AEB8AE6007A89BA /* ImageEffects.swift */,
+				9CF046411AECBDC8000EF04A /* UIImageEffects.h */,
+				9CF046421AECBDC8000EF04A /* UIImageEffects.m */,
+				9CF046401AECBDC7000EF04A /* WWDC-Bridging-Header.h */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -285,7 +289,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF7CFDF1AEB8AE6007A89BA /* ImageEffects.swift in Sources */,
 				9C0D37EB1AE9F8900031EEA6 /* MainViewController.swift in Sources */,
 				9CF2917D1AEB5E3600F16F4E /* GridMenuViewController.swift in Sources */,
 				9C0D37E91AE9F85F0031EEA6 /* ViewManager.swift in Sources */,
@@ -295,6 +298,7 @@
 				9C0A10FC1AE9A51300AC71E3 /* AppDelegate.swift in Sources */,
 				9CF7CFDD1AEB80C5007A89BA /* DataManager.swift in Sources */,
 				9CF2917F1AEB5E4400F16F4E /* InfoDetailViewController.swift in Sources */,
+				9CF046431AECBDC8000EF04A /* UIImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +427,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WWDC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WWDC/Objects/WWDC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -433,9 +440,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WWDC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WWDC/Objects/WWDC-Bridging-Header.h";
 			};
 			name = Release;
 		};

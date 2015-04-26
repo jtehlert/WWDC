@@ -44,5 +44,5 @@ struct Strings {
     static let detailViewHackathons = "hackathons"
     static let detailViewJumpSpace = "jumpspace"
     static let detailViewBottleRocket = "bottlerocket"
-    static let detailViewDeltaTauDelta = "deltataudelta"
+    static let detailViewPhotography = "photography"
 }

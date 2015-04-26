@@ -19,7 +19,7 @@ class GridMenuViewController: UIViewController {
     @IBOutlet weak var hackathonsButton: UIButton!
     @IBOutlet weak var jumpspaceButton: UIButton!
     @IBOutlet weak var bottlerocketButton: UIButton!
-    @IBOutlet weak var deltataudeltaButton: UIButton!
+    @IBOutlet weak var photographyButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +32,13 @@ class GridMenuViewController: UIViewController {
         hackathonsButton.setBackgroundImage(blurImage(DataManager.sharedManager.mainImageForItem(Strings.detailViewHackathons)), forState: UIControlState.Normal)
         jumpspaceButton.setBackgroundImage(blurImage(DataManager.sharedManager.mainImageForItem(Strings.detailViewJumpSpace)), forState: UIControlState.Normal)
         bottlerocketButton.setBackgroundImage(blurImage(DataManager.sharedManager.mainImageForItem(Strings.detailViewBottleRocket)), forState: UIControlState.Normal)
-        deltataudeltaButton.setBackgroundImage(blurImage(DataManager.sharedManager.mainImageForItem(Strings.detailViewDeltaTauDelta)), forState: UIControlState.Normal)
+        photographyButton.setBackgroundImage(blurImage(DataManager.sharedManager.mainImageForItem(Strings.detailViewPhotography)), forState: UIControlState.Normal)
     }
     
     // MARK: Private Methods
     
     func blurImage(image: UIImage) -> UIImage {
-        return image.applyDarkEffect()!
+        return UIImageEffects.imageByApplyingDarkEffectToImage(image)
     }
     
     // MARK: Actions
@@ -75,8 +75,8 @@ class GridMenuViewController: UIViewController {
         ViewManager.sharedManager.openBottleRocket()
     }
     
-    @IBAction func deltataudeltaButtonPressed(sender: AnyObject) {
-        ViewManager.sharedManager.openDeltaTauDelta()
+    @IBAction func photographyButtonPressed(sender: AnyObject) {
+        ViewManager.sharedManager.openPhotography()
     }
 
 }

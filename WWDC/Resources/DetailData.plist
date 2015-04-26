@@ -13,11 +13,11 @@
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>bio1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>bio2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>bio3</string>
 		</dict>
 	</dict>
 	<key>utdallas</key>
@@ -25,17 +25,26 @@
 		<key>title</key>
 		<string>The University of Texas at Dallas</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>Over the last three years I have been fortunate to go to the University of Texas at Dallas. As a computer science major I have recieved many opportunites to create some amazing things. The university even decided to write articles about some of the things that I have made, inlcuding University Eats and Jump Space Apps. </string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>utdallas</string>
+		<key>backgroundcolor</key>
+		<dict>
+			<key>red</key>
+			<integer>199</integer>
+			<key>green</key>
+			<integer>91</integer>
+			<key>blue</key>
+			<integer>17</integer>
+		</dict>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>utdallas1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>utdallas2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>utdallas3</string>
 		</dict>
 	</dict>
 	<key>baseball</key>
@@ -43,17 +52,17 @@
 		<key>title</key>
 		<string>Coaching NCAA Divison 3 Baseball</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>Baseball has been apart of my life ever since I was 6. One of the reasons I picked UT Dallas was because of its baseball program. After playing my freshman year I realized that I wanted to spend more time working on my apps, so I became a coach. Now I am a Student-Assistant coach and am helping my team become one of the beast teams in Texas.</string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>baseball</string>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>baseball1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>baseball2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>baseball3</string>
 		</dict>
 	</dict>
 	<key>universityeats</key>
@@ -61,17 +70,26 @@
 		<key>title</key>
 		<string>University Eats</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>University Eats is the app that I am most proud of. University Eats shows you all of the places to eat both on and off of your college campus. Eats grew from a small little app that I made for myself and has now quickly grown into a product that has over 8 colleges and is growing every day. </string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>universityeats</string>
+		<key>backgroundcolor</key>
+		<dict>
+			<key>red</key>
+			<integer>247</integer>
+			<key>green</key>
+			<integer>107</integer>
+			<key>blue</key>
+			<integer>28</integer>
+		</dict>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>universityeats1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>universityeats2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>universityeats3</string>
 		</dict>
 	</dict>
 	<key>fridgely</key>
@@ -79,17 +97,17 @@
 		<key>title</key>
 		<string>Fridgely</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>I always have problems remembering what is in my fridge or when my milk is going to expire. So I make Fridgely. Fridgely lets you track what is in your fridge and sends you local notifications to remind you when something is going to expire. Fridgely will be coming out in a couple of weeks.</string>
 		<key>mainImage</key>
 		<string>Fridgely</string>
 		<key>backgroundcolor</key>
 		<dict>
 			<key>red</key>
-			<integer>28</integer>
+			<integer>18</integer>
 			<key>green</key>
-			<integer>81</integer>
+			<integer>64</integer>
 			<key>blue</key>
-			<integer>117</integer>
+			<integer>106</integer>
 		</dict>
 		<key>images</key>
 		<dict>
@@ -106,17 +124,26 @@
 		<key>title</key>
 		<string>Hackathons</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>I love competing in hackathons. They give me an opportunity to create something new and work with an awesome team of my friends. This fall I was lucky enough to comete in a hackathon for Capital One where my team created FinanSir, an iOS and Android application that tells you how you are doing with your finances and tells you ways you could be doing better. Steve Wozniak was the special judge and we won first place!</string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>hackathons</string>
+		<key>backgroundcolor</key>
+		<dict>
+			<key>red</key>
+			<integer>71</integer>
+			<key>green</key>
+			<integer>164</integer>
+			<key>blue</key>
+			<integer>75</integer>
+		</dict>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>hackathons1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>hackathons2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>hackathons3</string>
 		</dict>
 	</dict>
 	<key>jumpspace</key>
@@ -124,17 +151,17 @@
 		<key>title</key>
 		<string>Jump Space Apps</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>I always wanted to try starting a company. So after my freshman year of college I create Jump Space Apps. Jump Space is a small iOS shop that specializes in creating apps for small businesses. The thrill of helping small business create a presence on the App Store is amazing. </string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>jumpspace</string>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>jumpspace1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>jumpspace2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>jumpspace3</string>
 		</dict>
 	</dict>
 	<key>bottlerocket</key>
@@ -142,35 +169,44 @@
 		<key>title</key>
 		<string>Bottle Rocket Studios</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>I am also a developer at one of the best iOS development companies in the country, Bottle Rocket Studios. As a part time developer at Bottle Rocket I work on projects like NBC, Syfy, Telemundo, Coca Cola and many others. </string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>br</string>
+		<key>backgroundcolor</key>
+		<dict>
+			<key>red</key>
+			<integer>237</integer>
+			<key>greem</key>
+			<integer>34</integer>
+			<key>blue</key>
+			<integer>19</integer>
+		</dict>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>br1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>br2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>br3</string>
 		</dict>
 	</dict>
-	<key>deltataudelta</key>
+	<key>photography</key>
 	<dict>
 		<key>title</key>
-		<string>Delta Tau Delta</string>
+		<string>Photography</string>
 		<key>description</key>
-		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
+		<string>When I am not developing or on the baseball field I love to take pictures. Taking pictures is not easy and I love botht the technical challenge as well as the creative freedom that it brings me. </string>
 		<key>mainImage</key>
-		<string>bio</string>
+		<string>photography</string>
 		<key>images</key>
 		<dict>
 			<key>image1</key>
-			<string>Fridgely-1</string>
+			<string>photography1</string>
 			<key>image2</key>
-			<string>Fridgely-2</string>
+			<string>photography2</string>
 			<key>image3</key>
-			<string>Fridgely-3</string>
+			<string>photography3</string>
 		</dict>
 	</dict>
 </dict>

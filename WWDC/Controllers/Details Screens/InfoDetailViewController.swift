@@ -44,6 +44,7 @@ class InfoDetailViewController: UIViewController {
         
         styleMainImageView()
         styleImageViews()
+        animateViews()
     }
     
     func styleMainImageView() {
@@ -54,12 +55,37 @@ class InfoDetailViewController: UIViewController {
     }
     
     func styleImageViews() {
-        imageView1.layer.cornerRadius = 2
-        imageView2.layer.cornerRadius = 2
-        imageView3.layer.cornerRadius = 2
+        imageView1.layer.cornerRadius = 3
+        imageView2.layer.cornerRadius = 3
+        imageView3.layer.cornerRadius = 3
         imageView1.layer.masksToBounds = true
         imageView2.layer.masksToBounds = true
         imageView3.layer.masksToBounds = true
     }
+    
+    func animateViews() {
+        
+        self.imageView1.alpha = 0
+        self.imageView2.alpha = 0
+        self.imageView3.alpha = 0
+        
+        self.imageView1.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        self.imageView2.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        self.imageView3.transform = CGAffineTransformMakeScale(0.1, 0.1)
+        
+        UIView.animateWithDuration(1.0, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 1.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            self.imageView1.alpha = 1
+            self.imageView2.alpha = 1
+            self.imageView3.alpha = 1
+            
+            self.imageView1.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            self.imageView2.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            self.imageView3.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        }) { finished in
+            
+        }
+    }
+    
+    
 
 }
