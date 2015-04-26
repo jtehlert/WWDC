@@ -82,6 +82,15 @@
 		<string>I am a junior at the University of Texas at Dallas. I am a developer at Bottle Rocket Studios and run my own development shop, Jump Space Apps. When I&apos;m not developing, I&apos;m on the baseball field as a Student Assistant-Coach for our baseball team.</string>
 		<key>mainImage</key>
 		<string>Fridgely</string>
+		<key>backgroundcolor</key>
+		<dict>
+			<key>red</key>
+			<integer>28</integer>
+			<key>green</key>
+			<integer>81</integer>
+			<key>blue</key>
+			<integer>117</integer>
+		</dict>
 		<key>images</key>
 		<dict>
 			<key>image1</key>

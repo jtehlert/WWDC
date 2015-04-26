@@ -142,6 +142,7 @@ class ViewManager: NSObject {
         viewController.titleText = DataManager.sharedManager.titleForItem(screenName)
         viewController.descriptionText = DataManager.sharedManager.descriptionForItem(screenName)
         viewController.mainImage = DataManager.sharedManager.mainImageForItem(screenName)
+        viewController.backgroundColor = DataManager.sharedManager.backgroundColorForItem(screenName)
         viewController.image1 = DataManager.sharedManager.image1ForItem(screenName)
         viewController.image2 = DataManager.sharedManager.image2ForItem(screenName)
         viewController.image3 = DataManager.sharedManager.image2ForItem(screenName)

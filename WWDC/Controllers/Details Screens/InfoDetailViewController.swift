@@ -20,6 +20,7 @@ class InfoDetailViewController: UIViewController {
     var titleText: String?
     var descriptionText: String?
     var mainImage: UIImage?
+    var backgroundColor: UIColor!
     var image1: UIImage?
     var image2: UIImage?
     var image3: UIImage?
@@ -38,6 +39,8 @@ class InfoDetailViewController: UIViewController {
         imageView1.image = image1
         imageView2.image = image2
         imageView3.image = image3
+        
+        self.view.backgroundColor = self.backgroundColor
         
         styleMainImageView()
         styleImageViews()
